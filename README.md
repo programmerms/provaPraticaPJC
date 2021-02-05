@@ -68,5 +68,5 @@ em docker.
 
            Situação :  implementada
 
-*  Inicialmente foram implementas os metodos para tratamento de upload de imagens mas por não conhecer a tecnologia de armazenamento em Store  Store MinIO não foram incluidas. Sendo priorizadas as demais tarefas.
+*  Inicialmente foram implementas os metodos para tratamento de upload de imagens mas por não dominar a tecnologia de armazenamento em Store  Store MinIO S3 não foram incluidas. Como demandaria tempo para buscar o conhecimento necessario para esta implementação optou-se pela  priorização das demais tarefas.
 
