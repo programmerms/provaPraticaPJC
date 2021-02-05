@@ -17,7 +17,6 @@ import javax.validation.constraints.NotNull;
 @AttributeOverride(name = "id", column = @Column(name = "cpa_id"))
 public class CapaAlbum extends PersistentEntity {
 
-
     @Getter
     @Setter
     @NotNull
@@ -27,28 +26,26 @@ public class CapaAlbum extends PersistentEntity {
 
     @Getter
     @Setter
-    @NotBlank(message = "Informe o nome da capa do Album")
-    @Column(name = "art_nome", length = 100)
-    private String nome;
+    @NotBlank(message = "A descrição da capa do album deve ser informada!")
+    @Column(name = "cpa_descricao", length = 100)
+    private String descricao;
 
-
-
-
-
-    /*
     @Getter
     @Setter
-    @NotBlank(message = "Informe o nome do Artista ou Banda!")
-    @Column(name = "art_nome", length = 100)
-    private String nome;
+    @NotBlank(message = "O content type dever informado!")
+    @Column(name = "cpa_content_type", length = 100)
+    private String contentType;
 
-    @JsonIgnore
     @Getter
     @Setter
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "tb_artista_album", joinColumns = @JoinColumn(name = "art_id"), inverseJoinColumns = @JoinColumn(name = "alb_id"))
-    private List<Album> listAlbum;
-    */
+    @NotBlank(message = "O nome do arquivo de imagem dever ser informado!")
+    @Column(name = "cpa_nomer_arquivo", length = 150)
+    private String nome;
 
+    @Getter
+    @Setter
+    @NotNull
+    @Column(name = "cpa_tamanho")
+    private Long tamanho;
 
 }
