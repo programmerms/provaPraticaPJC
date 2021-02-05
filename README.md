@@ -1,6 +1,10 @@
 # provaPraticaPJC
 PROJETO PRÁTICO IMPLEMENTAÇÃO BACK END 
 
+Marcos Francisco Olivio
+CPF : 60058706100
+Atribuição/Vaga :Analista Desenvolvedor
+
 Acesso api :
 
 	username: Admin
